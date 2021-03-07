@@ -1,0 +1,17 @@
+function selction(arr){
+    var a,temp,min,b;
+    for(a=0; a<arr.length; a++){
+        min=a;
+        for(b=a+1; b<arr.length; b++){
+            if(arr[min]>arr[b]){
+                min=b;
+            }
+        }
+        temp= arr[min];
+        arr[min]= arr[a];
+        arr[a]=temp;
+    }
+    return arr;
+}
+
+selction([5,3,6,1,2]);

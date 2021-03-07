@@ -1,0 +1,5 @@
+function kTs(str){
+    return str.replace("-","_");
+}
+
+console.log(kTs("Sayed-sakin"));

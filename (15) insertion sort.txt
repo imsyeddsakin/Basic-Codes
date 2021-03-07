@@ -1,0 +1,17 @@
+function insertion(arr){
+    var a,b,c,temp;
+    for(a=0; a<arr.length; a++){
+        b=a;
+        c=b+1;
+        while(arr[b]>arr[c]){
+            temp= arr[c];
+            arr[c]= arr[b];
+            arr[b]= temp;
+            b--;
+            c--;
+        }
+    }
+    return arr;
+}
+
+insertion([5,3,6,2,1,9,76,4]);

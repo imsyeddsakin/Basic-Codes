@@ -1,0 +1,20 @@
+function bubble(arr){
+    var temp=0,noSwap;
+    for(var a=0; a<arr.length; a++){
+        noSwap= true;
+        for(var b=0; b<arr.length; b++){
+            if(arr[b]>arr[b+1]){
+                temp= arr[b+1];
+                arr[b+1]= arr[b];
+                arr[b]= temp;
+                noSwap= false;
+            }
+        }
+        if(noSwap){
+            break;
+        }
+    }
+    return arr;
+}
+
+bubble([5,3,6,1,7]);

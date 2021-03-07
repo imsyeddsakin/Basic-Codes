@@ -1,0 +1,20 @@
+function pivot(arr, start=0,end=arr.length+1){
+    function swap(array,i,j){
+        var temp= array[i];
+        array[i]= array[j];
+        array[j]= temp;
+    }
+    var p=arr[start];
+    var swapId= start;
+
+    for(var i= start+1; i<arr.length; i++){
+        if(p>arr[i]){
+            swapId++;
+            swap(arr,swapId,i);
+        }
+    }
+    swap(arr,start,swapId);
+    return arr;
+}
+
+pivot([4,8,2,1,5,6,7,3]);

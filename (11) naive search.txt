@@ -1,0 +1,21 @@
+function naive(line,word){
+    var k=0;
+    var c=0;
+    var b=0;
+    for(let a=0; a<line.length; a++){
+        if(line.charAt([a])==word.charAt([c])){
+            k=+1;
+            c=+1;
+        }
+        else{
+            k=0;
+            c=0;
+        }
+        if(k==word.length){
+            b=+1;
+        }
+    }
+    return b;
+}
+
+naive("wowomgzomg","omg");

@@ -1,0 +1,13 @@
+var a=0;
+function check(array,n){
+    while(a!==array.length){
+        if(array[a]===n){
+            return a;
+        }
+        a+=1;
+        check(array,n);
+    }
+    return -1;
+}
+
+console.log(check([1,2,3,4,5],2));

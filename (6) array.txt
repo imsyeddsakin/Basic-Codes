@@ -1,0 +1,12 @@
+function maxNumber(array){
+    max= array[0];
+    array.forEach(function(a){
+        if(a>max){
+            max=a;
+        }
+    }) 
+    return max;
+}
+
+var arr=[1,10,-1,11,9];
+maxNumber(arr);

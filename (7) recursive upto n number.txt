@@ -1,0 +1,8 @@
+function sumofNum(num){
+    if(num===1){
+        return 1;
+    }
+    return num+ sumofNum(num-1);
+}
+
+sumofNum(3)

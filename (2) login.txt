@@ -1,0 +1,16 @@
+/*
+function multi(num){
+    console.log(num*num);
+}
+
+multi(5);
+*/
+
+function check(name,pass){
+    if(name=="sakin" & pass=="123"){
+        console.log("true");
+    }
+    console.log("false");
+}
+
+check(sakin,123)

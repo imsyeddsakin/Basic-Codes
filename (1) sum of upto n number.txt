@@ -1,0 +1,16 @@
+ console.log(sumnumber(10))
+
+/* **************** */
+function sumnumber(n){
+    let total=0;
+    for(let a=1; a<=n; a++){
+        total= total+a;
+    }
+    return to tatal;
+} 
+
+
+/*************** */
+function sumnumber(n){
+    return n*(n+1)/2;
+}

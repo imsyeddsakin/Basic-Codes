@@ -1,0 +1,45 @@
+/*
+function cO(nums){
+    var array=[];
+    let a;
+    for(a=0; a<nums.length; a++){
+        if(nums[a]%2!==0){
+            array.push(nums[a]);
+        }
+    }
+    console.log(array[a]);
+}
+
+var arr=[1,2,8,11,10,2,6];
+cO(arr);
+
+
+function cO(nums){
+    let array=[];
+    function help(check){
+        if(check.length === 0){
+            return;
+        }
+        if(check[0] % 2 !== 0){
+            array.push(check[0])
+        }
+        help(check.slice(1))
+    }
+    help(nums)
+    return array;
+}
+
+*/
+var array=[];
+function arr(nums){
+    if(nums.length === 0){
+        return;
+    }
+    if(nums[0] % 2 !== 0){
+        array.push(nums[0])
+    }
+    arr(nums.slice(1));
+    return array;
+}
+
+arr([1,2,8,11,10,2,6,5]);
